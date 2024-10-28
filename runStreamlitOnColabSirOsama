@@ -1,3 +1,7 @@
 !wget -q -O - ipv4.icanhazip.com
 
 !streamlit run app.py & npx localtunnel --port 8501
+#in second code change file name if it is not save with the name of app.py
+
+#for example if file name is ali.py than the code will be 
+!streamlit run ali.py & npx localtunnel --port 8501
