@@ -79,5 +79,23 @@ if __name__ == "__main__":
     main()
 
 # 3rd prompt i am creating a pdf question answer chatbot i will upload a pdf file the application will process the pdf file now implement the Rag in this application give me complete code i will be running the codes on google colab. i donot have access to paid APIs use open source model for it. i am going to use groq Api key to intereact, here are the documentation for the groq.
+import os
 
+from groq import Groq
+
+client = Groq(
+    api_key=os.environ.get("GROQ_API_KEY"),
+)
+
+chat_completion = client.chat.completions.create(
+    messages=[
+        {
+            "role": "user",
+            "content": "Explain the importance of fast language models",
+        }
+    ],
+    model="llama3-8b-8192",
+)
+
+print(chat_completion.choices[0].message.content)
 
