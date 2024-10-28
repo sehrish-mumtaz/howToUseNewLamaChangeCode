@@ -1,2 +1,2 @@
 # 1st prompt what is RAG (retrieval augmented generation) what are the main component of Rag? i am a beginner having no knowlegde about rag. act as an expert and give me answer according to it
-# prompt i want to built a simple RAg based application. give me complete code. i donot have access to paid APIs. use open source model for it.
+# 2nd prompt i want to built a simple RAg based application. give me complete code. i donot have access to paid APIs. use open source model for it. i am going to use groq Api key to intereact with the llm here are the documentation for the groq. i will be running the codes on google colab
